@@ -71,6 +71,7 @@ nav > ul {
 
 button {
   text-transform: uppercase;
+  border: none;
 }
 
 .nav-btn {
@@ -100,4 +101,56 @@ footer a {
 
 #content {
   margin: auto;
+  color: white;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6rem;
+  align-items: center;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 2rem;
+}
+
+#home h1 {
+  font-size: 4rem;
+}
+
+#home h1 span {
+  color: var(--color-secondary);
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+#content button {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+#content button:hover {
+  filter: brightness(0.9);
+}
+
+.home-img {
+  justify-self: end;
+}
+
+.home-img img {
+  max-width: 560px;
+  width: 100%;
+
+  filter: drop-shadow(2rem -2rem var(--color-primary-dark));
 }
