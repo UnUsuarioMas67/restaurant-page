@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Irish Grover";
+  src: url("./assets/fonts/Irish_Grover/IrishGrover-Regular.ttf");
+}
+
+:root {
+  --color-primary: #dc2626;
+  --color-primary-dark: #991b1b;
+  --color-secondary: #fcd34d;
+  --color-header-bg: #222222;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 6rem 1fr 5rem;
+
+  min-height: 100vh;
+  background-color: var(--color-primary);
+}
+
+.header-wrapper, footer {
+  color: white;
+  fill: white;
+  background-color: var(--color-header-bg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header, #content {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 4rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-family: "Irish Grover", Inter, sans-serif;
+  font-size: 2rem;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+.nav-btn {
+  height: 100%;
+  padding: 0 .75rem;
+  font-size: 1rem;
+
+  color: white;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.nav-btn:hover, .nav-btn.selected {
+  background-color: var(--color-primary);
+}
+
+.nav-btn.selected {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+}
+
+footer a {
+  color: white;
+}
+
+#content {
+  margin: auto;
+}
