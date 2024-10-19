@@ -1,4 +1,4 @@
-import burgerImg from "./assets/burger.png";
+import burgerImg from "./assets/images/burger.png";
 
 const getContent = function () {
   const article = document.createElement("article");
