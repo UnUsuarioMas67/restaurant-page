@@ -108,7 +108,7 @@ footer a {
   color: white;
 }
 
-#home {
+#home, #about .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 6rem;
@@ -238,4 +238,13 @@ h2 {
 
 .item-price {
   color: var(--color-primary-dark);
+}
+
+#about p {
+  font-size: 1rem;
+}
+
+#about img {
+  filter: drop-shadow(-2rem -2rem var(--color-primary-dark));
+  max-width: 100%;
 }
