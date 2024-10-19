@@ -88,12 +88,13 @@ button {
   cursor: pointer;
 }
 
-.nav-btn:hover,
-.nav-btn.selected {
-  background-color: var(--color-primary);
+.nav-btn:hover{
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+
 .nav-btn.selected {
+  background-color: var(--color-primary);
   color: var(--color-primary-dark);
   font-weight: bold;
 }
