@@ -32,7 +32,8 @@ body {
   background-color: var(--color-primary);
 }
 
-.header-wrapper, footer {
+.header-wrapper,
+footer {
   color: white;
   fill: white;
   background-color: var(--color-header-bg);
@@ -42,7 +43,8 @@ body {
   align-items: center;
 }
 
-header, #content {
+header,
+#content {
   max-width: 1440px;
   width: 100%;
   padding: 0 4rem;
@@ -76,7 +78,7 @@ button {
 
 .nav-btn {
   height: 100%;
-  padding: 0 .75rem;
+  padding: 0 0.75rem;
   font-size: 1rem;
 
   color: white;
@@ -86,7 +88,8 @@ button {
   cursor: pointer;
 }
 
-.nav-btn:hover, .nav-btn.selected {
+.nav-btn:hover,
+.nav-btn.selected {
   background-color: var(--color-primary);
 }
 
@@ -153,4 +156,76 @@ p {
   width: 100%;
 
   filter: drop-shadow(2rem -2rem var(--color-primary-dark));
+}
+
+#content > * {
+  padding: 4rem 0;
+}
+
+#menu {
+  max-width: 820px;
+  margin: auto;
+}
+
+:not(#home) h1,
+h2 {
+  text-transform: uppercase;
+}
+
+:not(#home) h1 {
+  color: var(--color-secondary);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 1.5rem;
+
+  padding: 1.5rem;
+
+  background-color: var(--color-primary-dark);
+  border-radius: 1rem;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-rows: 160px 1fr min-content;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5rem;
+
+  text-align: center;
+  font-weight: bold;
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.item-name,
+.item-price {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+.item-name {
+  color: black;
+}
+
+.item-price {
+  color: var(--color-primary-dark);
 }
