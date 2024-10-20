@@ -1,6 +1,6 @@
 # restaurant-page
 
-![](design_files/Home.png)
+![](preview.png)
 
 ## Description
 
